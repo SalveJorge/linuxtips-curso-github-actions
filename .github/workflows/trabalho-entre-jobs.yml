@@ -14,6 +14,12 @@ jobs:
             - name: Exibir uma mensagem
               run: echo "Estou fazendo o curso de GitHub Actions da Linuxtips" > /home/ubuntu/mensagem.txt
 
+            - uses: actions/upload-artifact@v4
+              with:
+                name: strigus
+                path: /home/ubuntu/mensagem.txt
+
+
          
     job_2: 
         runs-on: ubuntu-latest
@@ -25,7 +31,7 @@ jobs:
             with:
               name: strigus
               path: mensagem.txt
-              
+
           - name: Ver o conteudo da pasta strigus
             run: ls -lhat && ls ./strigus/
 
