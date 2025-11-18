@@ -21,3 +21,6 @@ jobs:
               with:
                   command: quickview
                   image: ${{inputs.dockerImage}}
+                  write-comment: true
+                  github-token: ${secrets.GITHUB_TOKEN}}
+
