@@ -21,6 +21,4 @@ jobs:
               with:
                   command: quickview
                   image: ${{inputs.dockerImage}}
-                  write-comment: true
-                  dockerhub-user: ${{ secrets.DOCKERHUB_USERNAME }}
-                  dockerhub-password: ${{ secrets.DOCKERHUB_PASSWORD }}
+                 
