@@ -1,4 +1,4 @@
-name: Desafio 1 
+name: Desafio 1
 on:
     workflow_dispatch:
         inputs:
@@ -13,21 +13,11 @@ jobs:
             - name: docker pull image
               run: docker pull ${{inputs.dockerImage}}
             - name: list mages
-              run: docker images 
+              run: docker images
             - name: inspect the image ${{inputs.dockerImage}}
-              run: docker inspect ç
+              run: docker inspect ${{inputs.dockerImage}}
             - name: Docker Scout
               uses: docker/scout-action@v1
               with:
-                command: quickview
-                image: ${{inputs.dockerImage}}
-
-
-
-        
-
-
-
-        
-
-    
+                  command: quickview
+                  image: ${{inputs.dockerImage}}
