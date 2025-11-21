@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Printa Gollum
-	run: echo "Alguma alteracao foi realizada na wiki"
+	    run: echo "Alguma alteracao foi realizada na wiki"
