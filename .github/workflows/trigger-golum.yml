@@ -3,8 +3,8 @@ on:
   gollum
 
 jobs:
-  job-gollum
-    runs-on: ubunut-latest
+  job-gollum:
+    runs-on: ubuntu-latest
     steps:
       - name: Printa Gollum
 	run: echo "Alguma alteracao foi realizada na wiki"
