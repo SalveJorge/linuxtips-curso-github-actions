@@ -4,7 +4,7 @@ on:
 
 jobs:
   job-deployment:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Printa Deployment
-      run: Esse job foi triggado por um deployment externo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Printa Deployment
+        run: Esse job foi triggado por um deployment externo
