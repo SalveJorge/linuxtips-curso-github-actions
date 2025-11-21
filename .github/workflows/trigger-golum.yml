@@ -7,4 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Printa Gollum
+<<<<<<< HEAD
 	    run: echo "Alguma alteracao foi realizada na wiki"
+=======
+        run: echo "Alguma alteracao foi na wiki"
+>>>>>>> ab3edf4 (Fix tab error)
