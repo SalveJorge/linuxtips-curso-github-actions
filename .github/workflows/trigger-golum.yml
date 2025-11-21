@@ -1,0 +1,10 @@
+name: Criando nossa trigger Gollum
+on:
+  gollum
+
+jobs:
+  job-gollum
+    runs-on: ubunut-latest
+    steps:
+      - name: Printa Gollum
+	run: echo "Alguma alteracao foi realizada na wiki"
