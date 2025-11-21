@@ -8,5 +8,5 @@ jobs:
   job-discussion:
     runs-on: ubuntu-latest
     steps:
-      -name: Printa discussion
-       run: echo "Esse job foi triggado por uma discussion criada/alterada/respondida"
+      - name: Printa discussion
+        run: echo "Esse job foi triggado por uma discussion criada/alterada/respondida"
