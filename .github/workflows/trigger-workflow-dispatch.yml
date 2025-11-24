@@ -1,6 +1,6 @@
 name: criando nossa trigger status
 on:
-  workflow-dispatch
+  workflow-dispatch:
     inputs:
       node-version:
         default: "20" 
