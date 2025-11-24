@@ -1,7 +1,7 @@
 name: criando nossa trigger schedule
 on:
   schedule:
-    - cron: '15 33 * * 1'
+    - cron: '35 15 * * 1'
 
 
 jobs:
