@@ -1,7 +1,7 @@
 name: criando nossa trigger issue
 on:
   issues:
-    types: [created,edited,deleted]
+    types: [opened,edited,deleted]
 
 
 jobs:
