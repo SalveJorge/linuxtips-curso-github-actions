@@ -1,4 +1,4 @@
-name: criando nossa trigger status
+name: criando nossa trigger workflow-dispatch
 on:
   workflow_dispatch:
     inputs:
@@ -15,4 +15,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install npm 
-        run : npm install {{github.inputs.node-version}}
+        run : npm install ${{github.inputs.node-version}}
