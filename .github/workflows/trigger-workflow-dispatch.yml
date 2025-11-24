@@ -12,7 +12,7 @@ on:
         - "18"
 jobs:
   install-npm:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Install npm 
-      run : npm install {{github.inputs.node-version}}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install npm 
+        run : npm install {{github.inputs.node-version}}
