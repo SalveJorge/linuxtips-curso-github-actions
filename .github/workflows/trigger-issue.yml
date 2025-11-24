@@ -1,6 +1,6 @@
 name: criando nossa trigger issue
 on:
-  issiue:
+  issue:
     types: [created,edited,deleted]
 
 
