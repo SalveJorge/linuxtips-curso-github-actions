@@ -2,8 +2,8 @@ name: criando nossa trigger pull-request
 on:
   pull_request:
     types: [opened,edited,deleted,reopened]
-  branches:
-    - "main/**/  
+    branches:
+      - "main*"  
 
 jobs:
   job-pull_request:
