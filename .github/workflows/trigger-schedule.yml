@@ -1,0 +1,12 @@
+name: criando nossa trigger schedule
+on:
+  schedule:
+    - cron: 15 30 * * 1
+
+
+jobs:
+  execute-schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Informa horario
+        run: echo " schedule executado com sucesso, agora sao $(date) UTC"
