@@ -1,0 +1,12 @@
+name: Testando a regra de create
+on:
+  create:
+    
+jobs:
+  print-modification:
+    runs-on: ubuntu-latest
+    steps:
+
+        - name: Aviso sobre criacao de branch ou tag
+          run: echo "Este workflow foi triagado por uma regra de create, uma nova branch ou tag foi criado no repositorio"
+
