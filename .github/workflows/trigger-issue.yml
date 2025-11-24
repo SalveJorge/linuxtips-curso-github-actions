@@ -1,0 +1,12 @@
+name: criando nossa trigger issue
+on:
+  issiue:
+    types: [created,edited,deleted]
+
+
+jobs:
+  job-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Printa issue
+        run: echo "Esse job foi triggado por uma issue criada/alterada/deletada"
