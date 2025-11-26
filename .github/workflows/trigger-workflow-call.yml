@@ -1,6 +1,6 @@
 name: Workflow Compartilhado
 on: 
-  workflow_call
+  workflow_call:
     inputs:
       nome-do-curso: 
         required: true 
