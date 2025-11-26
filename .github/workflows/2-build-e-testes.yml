@@ -1,0 +1,16 @@
+name: build e teste
+on:
+  workflow_call:
+    inputs:
+      ambiente:
+        required: true
+        type: string
+jobs:
+  job-build-e-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Buildando e testando  o ambiente"
+        ambiente: ${{github.inputs.events.env}}
+        run: echo "make && test ${{github.events.inputs.ambiente}}"
+
+  

@@ -1,0 +1,14 @@
+name: validacao de ambiente
+on:
+  workflow-run:
+    workflows: [build e teste]
+    types:
+      - completed
+
+jobs:
+  job-publicacao:
+    runs-on: ubunut-latest
+    steps:
+      - name: "Publica codigo"
+      - run: echo "Deploying the code"
+

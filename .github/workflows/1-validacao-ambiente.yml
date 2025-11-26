@@ -1,0 +1,20 @@
+name: Validacao de ambiente
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        required: true
+        type: choice
+        options:
+          - dev
+          - stage
+          - prod
+
+ jobs: 
+   job-call-workflow:
+     uses: ./github/.workflows/build-e-testes.yml
+     with:
+       ambiente: ${{inputs.env}}
+
+
+          
