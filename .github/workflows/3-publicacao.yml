@@ -1,6 +1,6 @@
 name: validacao de ambiente
 on:
-  workflow-run:
+  workflow_run:
     workflows: [build e teste]
     types:
       - completed
