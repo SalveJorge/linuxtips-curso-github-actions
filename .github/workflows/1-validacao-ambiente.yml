@@ -10,11 +10,11 @@ on:
           - stage
           - prod
 
- jobs: 
-   job-call-workflow:
-     uses: ./github/.workflows/build-e-testes.yml
-     with:
-       ambiente: ${{inputs.env}}
+jobs: 
+  job-call-workflow:
+    uses: ./github/.workflows/build-e-testes.yml
+    with:
+      ambiente: ${{inputs.env}}
 
 
           
