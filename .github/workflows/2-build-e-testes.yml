@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: "Buildando e testando  o ambiente"
         ambiente: ${{github.inputs.events.env}}
-        run: echo "make && test ${{github.events.inputs.ambiente}}"
+        run: echo "make && test ${{inputs.ambiente}}"
 
   
