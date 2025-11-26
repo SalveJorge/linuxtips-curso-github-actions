@@ -9,7 +9,7 @@ jobs:
   job-build-e-test:
     runs-on: ubuntu-latest
     steps:
-      - name: "Buildando e testando  o ambiente"}
+      - name: "Buildando e testando  o ambiente"
         run: echo "make && test ${{inputs.ambiente}}"
 
   
