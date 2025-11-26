@@ -9,7 +9,6 @@ on:
 jobs:
   job-publicacao:
     runs-on: ubuntu-latest
-    if: ${{ github.events.workflow_run.conclusion == 'success' }}
     steps:
       - name: "Publica codigo"
         run: echo "Deploying the code"
