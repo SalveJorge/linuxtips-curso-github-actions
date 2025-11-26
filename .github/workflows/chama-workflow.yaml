@@ -3,7 +3,7 @@ name: Chama workflow compartilhado
 
 on:
   workflow_dispatch:
-    input:
+    inputs:
       nome-do-curso-enviado:
         required: true
         type: string
