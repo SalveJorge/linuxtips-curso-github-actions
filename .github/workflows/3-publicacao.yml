@@ -1,4 +1,4 @@
-name: validacao de ambiente
+name: Deploy the code
 
 on:
   workflow_run:
