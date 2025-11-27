@@ -1,0 +1,14 @@
+name: Pega contexto
+
+on: 
+  push
+
+jobs:
+  job-pega-contexto:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_CONTEXTO : ${{toJson(github}}
+    steps:
+      name:  Imprime contexto
+      run : echo "$GITHUB_CONTEXTO"
+
