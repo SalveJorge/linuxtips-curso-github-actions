@@ -2,7 +2,7 @@ name: Deploy the code
 
 on:
   workflow_run:
-    workflows: ["build e teste"]
+    workflows: ["Validacao de ambiente"]
     types:
       - completed
 
