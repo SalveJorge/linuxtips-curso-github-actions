@@ -1,0 +1,11 @@
+name: Pega contexto completo 
+on: push 
+
+jobs:
+  job-pega-contexto:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump github context
+        env: 
+          GITHUB_CONTEXT: ${{toJson(github}}
+       run: echo "GITHUB_CONTEXT"
