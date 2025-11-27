@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name:  Imprime contexto
-`       env:
+        env:
           GITHUB_CONTEXTO : ${{toJson(github}}
         run : echo "$GITHUB_CONTEXTO"
 
