@@ -4,7 +4,7 @@ on:
 
 jobs:
   valida-ambiente-prd:
-    if: github.ref_name == "main"
+    if: github.ref_name == 'main'
     runs-on: ubuntu-latest
     environment: production
     steps:
@@ -12,7 +12,7 @@ jobs:
         run: echo estou no ambiente ${{ vars.AMBIENTE }}
     
   valida-ambiente-stg:
-    if: github.ref_name == "staging"
+    if: github.ref_name == 'staging'
     runs-on: ubuntu-latest
     environment: staging
     steps:
