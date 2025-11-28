@@ -17,7 +17,7 @@ jobs:
     environment: staging
     steps:
       - name: Printa valor
-        run: Echo estou no ambiente ${{ vars.AMBIENTE }}
+        run: echo estou no ambiente ${{ vars.AMBIENTE }}
 
      
     
