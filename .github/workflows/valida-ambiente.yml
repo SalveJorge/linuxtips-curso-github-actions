@@ -15,7 +15,7 @@ jobs:
       - env:
           DIA-DO-MES: 20 
         name: Printa valor
-        run: echo estou no ambiente ${{ vars.AMBIENTE }} no curso ${{NOME-DO-CURSO}} e hoje e $${DIA-DA-SEMANA}} dia do mes ${{DIA-DO-MES}}
+        run: echo estou no ambiente ${{ vars.AMBIENTE }} no curso ${{env.NOME-DO-CURSO}} e hoje e $${env.DIA-DA-SEMANA}} dia do mes ${{env.DIA-DO-MES}}
     
   valida-ambiente-stg:
     env:
@@ -27,7 +27,7 @@ jobs:
       - env:
           DIA-DO-MES: 10
         name: Printa valor
-        run: echo estou no ambiente ${{ vars.AMBIENTE }} no curso ${{NOME-DO-CURSO}} e hoje e dia ${{DIA-DA-SEMANA}} dia do mes ${{DIA-DO-MES}}
+        run: echo estou no ambiente ${{ vars.AMBIENTE }} no curso ${{env.NOME-DO-CURSO}} e hoje e dia ${{env.DIA-DA-SEMANA}} dia do mes ${{env.DIA-DO-MES}}
 
      
     
