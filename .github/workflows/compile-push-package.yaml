@@ -1,7 +1,7 @@
 name: Compile and Push 
 on:
   push:
-   tags:["v*"]
+    tags:["v*"]
 
 permissions:
   contents: read
@@ -9,8 +9,8 @@ permissions:
 
 jobs:
   publish:
-  runs-on: ubuntu-latest
-  steps:
+    runs-on: ubuntu-latest
+    steps:
     - name: checkout code
       uses: actions/checkout@v5
 
@@ -25,7 +25,7 @@ jobs:
       run: npm install --package-lock-only --ignore-scripts
     
     - name: Install and test
-      working-directoty: pacote
+      working-directory: pacote
       run: npm ci && npm test || echo "No test yet"
 
     - name: Publish to Github Packages
