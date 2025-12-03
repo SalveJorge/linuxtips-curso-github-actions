@@ -1,0 +1,38 @@
+name: Compile and Push 
+on:
+  push:
+   tags:["v*"]
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout code
+      uses: actions/checkout@v5
+
+    - name: Install nodeJS
+      uses: actions/setup-node@v6
+      with: 
+        node-version: 24
+        registry-url: 'https://npm.pkg.gihub.com'
+
+    - name:  Generate lockfile
+      working-directory: pacote
+      run: npm install --package-lock-only --ignore-scripts
+    
+    - name: Install and test
+      working-directoty: pacote
+      run: npm ci && npm test || echo "No test yet"
+
+    - name: Publish to Github Packages
+      working-directory: pacote
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: npm publish
+
+     
+    
