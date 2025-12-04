@@ -28,6 +28,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
      
       - name: Build and push image
+        working-directory: aplicacao
         run: |
            docker build \
              --build-arg ${{ env.GH_PACKAGES_TOKEN }} \
