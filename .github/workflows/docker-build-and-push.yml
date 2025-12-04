@@ -30,7 +30,7 @@ jobs:
       - name: Build and push image
         run: |
            docker build \
-             -- build-arg ${{ env.GH_PACKAGES_TOKEN }} \
+             --build-arg ${{ env.GH_PACKAGES_TOKEN }} \
             -t "${{ env.IMAGE_NAME }}" \
              aplicacao 
            docker push ${{ env.IMAGE_NAME }}
