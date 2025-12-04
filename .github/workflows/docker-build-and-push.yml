@@ -15,7 +15,7 @@ permissions:
       contents: read
 jobs:
   on-success:
-    runs:-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
