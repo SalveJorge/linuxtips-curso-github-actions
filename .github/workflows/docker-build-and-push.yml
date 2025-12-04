@@ -9,7 +9,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}/aplicacao:${{ github.sha }}
-  GH_PACKAGES_TOKEN: ${{ secrets..GITHUB_TOKEN }}
+  GH_PACKAGES_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 permissions:
       packages: write
       contents: read
