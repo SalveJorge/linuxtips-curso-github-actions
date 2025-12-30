@@ -1,6 +1,6 @@
 name: teste de ID
 on:
-  worflow_dispatch
+  workflow_dispatch
 
 jobs:
   build:
