@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-linux
     steps:
        - name : Quality gate test
-        run: |
+         run: |
           if (( ${{ needs.build.output.test-cobertura  }} < 80 )); then
             echo "::error::Build reprovado por baixa cobertura"
             exit 1
