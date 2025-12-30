@@ -1,5 +1,6 @@
 name: teste de ID
-on: worflow_dispatch
+on:
+  worflow_dispatch
 
 jobs:
   build:
